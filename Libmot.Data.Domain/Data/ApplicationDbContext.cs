@@ -21,20 +21,7 @@ namespace Libmot.WebApplication.Data
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
-            modelBuilder.Entity<Employee>().HasData(
-                new Employee()
-                {
-                    Id = Guid.NewGuid().ToString(),
-                    Name = "Olanrewaju Samuel",
-                    UserName = "Admin",
-                    PasswordHash = "Admin123@",
-                    Email = "asamoja9100@gmail.com",
-                    EmailConfirmed = true,
-                    PhoneNumber = "07067147323",
-                    PhoneNumberConfirmed = true,
-                    Address = "38 Fortune Spring Drive Lagos"
-                }
-                );
+            
         }
 
     }
